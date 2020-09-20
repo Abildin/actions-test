@@ -16,3 +16,9 @@ jobs:
     - uses: Abildin/auto-approve-action@develop
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/github-script@v3
+      with:
+        script: |
+          const diff_url = context.payload.pull_request.diff_url
+          const result = await github.request(diff_url)
+          console.log(result)
