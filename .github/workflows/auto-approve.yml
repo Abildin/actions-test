@@ -19,6 +19,7 @@ jobs:
     - uses: actions/github-script@v3
       with:
         script: |
-          const diff_url = context.payload.pull_request.diff_url
-          const result = await github.request(diff_url)
+          const commits_url = context.payload.pull_request.commits_url
+          const result = await github.request(commits_url)
           console.log(result)
+
