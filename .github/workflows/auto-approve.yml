@@ -1,11 +1,5 @@
 name: Auto approve
 
-env:
-  BASE_REF: ${{ github.base_ref }}
-  HEAD_REF: ${{ github.head_ref }}
-  TARGET_FILES: |
-    requirements.txt
-
 on: pull_request
 
 jobs:
@@ -16,3 +10,5 @@ jobs:
     - uses: Abildin/auto-approve-action@develop
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
+        allowed-authors: '.github/configs/allowed-authors.json'
+        allowed-files: '.github/configs/allowed-files.json'
