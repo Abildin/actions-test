@@ -1,0 +1,10 @@
+{
+  "allowed-authors": [
+    "Abildin"
+  ],
+  "allowed-files": [
+    [
+      "requirements.txt"
+    ]
+  ]
+}
