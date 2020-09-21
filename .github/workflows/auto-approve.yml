@@ -1,11 +1,5 @@
 name: Auto approve
 
-env:
-  BASE_REF: ${{ github.base_ref }}
-  HEAD_REF: ${{ github.head_ref }}
-  TARGET_FILES: |
-    requirements.txt
-
 on: pull_request
 
 jobs:
@@ -13,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: Abildin/auto-approve-action@develop
+    - uses: Abildin/auto-approve-action@v1.0.0
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
+        config: '.github/configs/auto-approve.json'
