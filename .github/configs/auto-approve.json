@@ -1,7 +1,5 @@
 {
-  "allowed-authors": [
-    "Abildin"
-  ],
+  "allowed-authors": [],
   "allowed-files": [
     [
       "requirements.txt"
