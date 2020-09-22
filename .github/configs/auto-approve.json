@@ -1,6 +1,8 @@
 {
-  "allowed-authors": [
-    "Abildin"
-  ],
-  "allowed-files": []
+  "allowed-authors": [],
+  "allowed-files": [
+    [
+      "requirements.txt"
+    ]
+  ]
 }
