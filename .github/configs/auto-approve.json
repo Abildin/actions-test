@@ -1,6 +1,7 @@
 {
   "allowed-authors": [
-    "Abildin"
+    "Abildin",
+    "NewAuthor"
   ],
   "allowed-files": []
 }
