@@ -1,11 +1,6 @@
 {
   "allowed-authors": [],
   "allowed-files": [
-    [
-      "requirements.txt"
-    ],
-    [
-      ".gitignore"
-    ]
+    "requirements.txt"
   ]
 }
