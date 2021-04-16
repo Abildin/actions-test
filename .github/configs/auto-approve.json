@@ -1,6 +1,6 @@
 {
   "allowed-authors": [],
   "allowed-files": [
-    "requirements.txt"
+    ["requirements.txt"]
   ]
 }
