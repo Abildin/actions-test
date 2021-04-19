@@ -1,6 +1,10 @@
 {
   "allowed-authors": [],
   "allowed-files": [
-    ["requirements.txt"]
+    ["requirements.txt"],
+    [
+      "pyproject.toml",
+      "poetry.lock"
+    ]
   ]
 }
